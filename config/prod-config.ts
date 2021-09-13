@@ -6,14 +6,14 @@ const prodConfig = (env: IProcessEnv): IEnvConfig => {
       host: env.PROD_APP_HOST,
       port: parseInt(<string>env.PROD_APP_PORT, 10) || undefined,
     },
-    secrets: {
-      token: env.PROD_TOKEN_SECRET,
-      tokenExp: env.PROD_TOKEN_EXP,
-    },
     database: {
       host: env.PROD_DB_HOST,
       port: parseInt(<string>env.PROD_DB_PORT, 10) || undefined,
       name: env.PROD_DB_NAME,
+    },
+    secrets: {
+      token: env.PROD_TOKEN_SECRET,
+      tokenExp: env.PROD_TOKEN_EXP,
     },
   };
 };

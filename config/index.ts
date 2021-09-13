@@ -1,7 +1,7 @@
-import devConfig from "./development";
-import testConfig from "./testing";
-import stageConfig from "./staging";
-import prodConfig from "./production";
+import devConfig from "./dev-config";
+import testConfig from "./test-config";
+import stageConfig from "./stage-config";
+import prodConfig from "./prod-config";
 
 import { IBaseConfig, IConfig, IEnvConfig, IProcessEnv } from "./types";
 

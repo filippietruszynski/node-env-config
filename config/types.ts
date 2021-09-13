@@ -11,15 +11,15 @@ interface IApp {
   port?: number;
 }
 
-interface ISecrets {
-  token?: string;
-  tokenExp?: string;
-}
-
 interface IDatabase {
   host?: string;
   port?: number;
   name?: string;
+}
+
+interface ISecrets {
+  token?: string;
+  tokenExp?: string;
 }
 
 export interface IBaseConfig {
@@ -32,8 +32,8 @@ export interface IBaseConfig {
 
 export interface IEnvConfig {
   app: IApp;
-  secrets: ISecrets;
   database: IDatabase;
+  secrets: ISecrets;
 }
 
 export interface IConfig extends IBaseConfig, IEnvConfig {}
