@@ -6,7 +6,7 @@ Extensible Node.js environment variables configuration using TypeScript.
 
 Before you begin, ensure your project meets the following requirements:
 
-- It uses [Node.js](https://nodejs.org) environment and has [@types/node](https://www.npmjs.com/package/@types/node) dependency installed.
+- It uses [Node.js](https://nodejs.org) runtime and has [@types/node](https://www.npmjs.com/package/@types/node) dependency installed.
 - It has [typescript](https://www.npmjs.com/package/typescript) dependency installed.
 - It has [dotenv](https://www.npmjs.com/package/dotenv) dependency installed.
 - It supports [ES2018](https://262.ecma-international.org/9.0) or higher.
