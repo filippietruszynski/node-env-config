@@ -29,7 +29,7 @@ import config from "./config"
 console.log(`Server listens on https://${config.app.host}:${config.app.port}/`);
 ```
 
-## `.env` template
+## Template `.env`
 
 ```
 # app hosts
