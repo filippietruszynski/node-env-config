@@ -7,19 +7,19 @@ export interface IProcessEnv {
 /* CONFIG */
 
 interface IApp {
-  host?: string;
-  port?: number;
+  host: string;
+  port: number;
 }
 
 interface IDatabase {
-  host?: string;
-  port?: number;
-  name?: string;
+  host: string;
+  port: number;
+  name: string;
 }
 
 interface ISecrets {
-  token?: string;
-  tokenExp?: string;
+  token: string;
+  tokenExp: string;
 }
 
 export interface IBaseConfig {

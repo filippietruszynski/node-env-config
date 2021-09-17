@@ -1,7 +1,4 @@
-import devConfig from "./dev-config";
-import testConfig from "./test-config";
-import stageConfig from "./stage-config";
-import prodConfig from "./prod-config";
+import envConfigs from "./env-configs";
 
 import { IBaseConfig, IConfig, IEnvConfig, IProcessEnv } from "./types";
 
@@ -20,19 +17,19 @@ let envConfig: IEnvConfig;
 
 switch (nodeEnv) {
   case "development":
-    envConfig = devConfig(processEnv);
+    envConfig = envConfigs.devConfig(processEnv);
     break;
   case "testing":
-    envConfig = testConfig(processEnv);
+    envConfig = envConfigs.testConfig(processEnv);
     break;
   case "staging":
-    envConfig = stageConfig(processEnv);
+    envConfig = envConfigs.stageConfig(processEnv);
     break;
   case "production":
-    envConfig = prodConfig(processEnv);
+    envConfig = envConfigs.prodConfig(processEnv);
     break;
   default:
-    envConfig = devConfig(processEnv);
+    envConfig = envConfigs.devConfig(processEnv);
 }
 
 const config: IConfig = { ...baseConfig, ...envConfig };
