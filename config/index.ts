@@ -1,5 +1,4 @@
 import envConfigs from "./env-configs";
-
 import { IBaseConfig, IConfig, IEnvConfig, IProcessEnv } from "./types";
 
 const processEnv: IProcessEnv = process.env;
@@ -33,5 +32,4 @@ switch (nodeEnv) {
 }
 
 const config: IConfig = { ...baseConfig, ...envConfig };
-
 export default config;
